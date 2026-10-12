@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giovani Medeiros | Desenvolvedor & Perito Judicial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="..//scripts/tailwindConfig.js"></script>
+</head>
+<body class="bg-darkbg text-gray-100 min-h-screen flex flex-col justify-between selection:bg-brand-600 selection:text-white">
+<!--Hearder | Navbar-->
+<header class="sticky top-0 z-50 backdrop-blur-md bg-darkbg/85 border-b border-gray-800/80 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+        <a href="#hero" class="text-xl font-bold tracking-tight text-white flex items-center gap-2 group">
+            <span class="bg-brand-600 text-white w-9 h-9 rounded-xl flex items-center justify-center font-extrabold text-sm shadow-md group-hover:scale-10 transition-transform">GM</span>
+            <span>Giovani<span class="text-brand-500">.dev</span></span>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+            <a href="#hero" class="hover:text-brand-500 transition-colors">Início</a>
+            <a href="#competencias" class="hover:text-brand-500 transition-colors">Competências</a>
+            <a href="#projetos" class="hover:text-brand-500 transition-colors">Projetos</a>
+            <a href="#pericia" class="hover:text-brand-500 transition-colors">Perícia Judicial</a>
+            <a href="#contato" class="btn-primary">Contato</a>
+        </nav>
+
+        <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white focus: outline-none p-2 rounded-lg bg-gray-900 border-gray-800" aria-label="Abrir Menu">
+            <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden md: hidden bg-darkcard/95 backdrop-blur-lg border-b border-gray-800 px-6 pt-4 pb-6 space-y-3 shadow-2xl transition-all">
+        <a href="#hero" class="mobile-link block py-2 text-gray-300 hover:text-brand-500 font-medium">Início</a>
+        <a href="#competencias"class="mobile-link block py-2 text-gray-300 hover:text-brand-500 font-medium">Competências</a>
+        <a href="#projetos" class="mobile-link block py-2 text-gray-300 hover:text-brand-500 font-medium">Projetos</a>
+        <a href="#pericia" class="mobile-link block py-2 text-gray-300 hover:text-brand-500 font-medium">Perícia Judicial</a>
+        <a href="#contato" class="mobile-link block py-3 text-center rounded-xl bg-brand-600 text-white font-semibold shadow-md">Contato</a>
+    </div>
+</header>
+<!--Main Content-->
+<main>
+    <!--PRINCIPAL-->
+    <section id="hero" class="relative py-20 lg:py-32 overflow-hidden border-b border-gray-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-600/10 border border-brand-500/30 text-brand-500 text-sm font-medium">
+                        <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
+                        Análises de Sistemas e Desenvolvimeto
+                    </div>
+                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                        Giovani Medeiros
+                    </h1>
+                    <p class="text-xl sm:text-2xl text-brand-500 font-semibold">
+                        Desenvolvedor de Sites, Aplicativos e Perito Judicial
+                    </p>
+                    <p class="text-gray-400 text-base sm:text-lg max-w-2xl leading-relaxed">
+                        Especialista em Desenvolvimeto de aplicações e web modernas, análise de dados e identificação de vulnerabilidades em sistemas de informação e suporte técnico-jurídico.
+                    </p>
+                    <p class="text-gray-400 mt-3 text-sm sm:text-base">Como Perito Judicial, atuo na elaboração de laudos técnicos focados em análise de dados, investigação de erros de código e identificação de vulnerabilidades em sistemas de informação.</p>
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="#projetos" class="btn-primary flex items-center gap-2">
+                            Ver Projetos <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                        <a href="#contato" class="px-6 py-3 rounded-xl bg-darkcard border border-gray-500 text-gray-200 font-semibold transition-all">
+                        Solicitar Análise
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative w-72 h-72 sm:w-80 sm:h-80 rounded-2xl bg-gradient-to-tr from-brand-600 to-indigo-900 p-1 glow-effect">
+                    <img src="midias/dev_foto2.jpg" alt="Giovani Medeiros" class="w-full h-full object-cover rounded-2xl border border-gray-800">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SESSÃO DE COMPETÊNCIAS-->
+    <section id="competencias" class="py-20 border border-gray-800/50 bg-darkcard/30">
+        <div class="max-w-7xl mx-auto px-4 sm: px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-white tracking-tight sm:text-4xl">Competências & Tecnologias</h2>
+                <p class="mt-4 text-gray-400">Domínio em ferramentas modernas de desenvolvimento e análise de dados.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!--CARTÕES-->
+                <div class="card-dark">
+                    <div class="w-12 h-12 rounded-xl bg-brand-600/10 border border-brand-500/20 text-brand-500 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Análise de Dados</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Tratamento de dados, geração de relatórios e gráficos estatísticos dinâmicos e persistência segura para tomada de decisão.
+                    </p>
+                    <li class="flex items-center gap-2 text-brand-500 font-semibold text-sm">
+                     <i class="fa-solid fa-check"></i>
+                     <span>SQL</span>
+                        </li>
+                       <li class="flex items-center gap-2 text-brand-500 font-semibold text-sm">
+                     <i class="fa-solid fa-check"></i>
+                     <span>GRÁFICOS INTERATIVOS</span>
+                        </li>
+                </div>
+
+                <div class="card-dark">
+                    <div class="w-12 h-12 rounded-xl bg-brand-600/10 border border-brand-500/20 text-brand-500 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-gavel"></i>
+                    </div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Perícia Judicial</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Avaliação de sistemas, auditoria de código, verificação de vulnerabilidades laudos técnicos especializados.
+                    </p>
+                     <li class="flex items-center gap-2 text-brand-500 font-semibold text-sm">
+                     <i class="fa-solid fa-check"></i>
+                     <span>LAUDOS E PARECERES TÉCNICOS</span>
+                        </li>
+                         <li class="flex items-center gap-2 text-brand-500 font-semibold text-sm">
+                     <i class="fa-solid fa-check"></i>
+                     <span>IDENTIFICAÇÃO DE ERROS</span>
+                        </li>
+                         <li class="flex items-center gap-2 text-brand-500 font-semibold text-sm">
+                     <i class="fa-solid fa-check"></i>
+                     <span>ANÁLISE DE VULNERABILIDADES</span>
+                        </li>
+                    </div>
+
+                    <div class="card-dark">
+                    <div class="w-12 h-12 rounded-xl bg-brand-600/10 border border-brand-500/20 text-brand-500 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Automação</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Desenvolvimento de robôs para otimização de processos de negócios.
+                    </p>
+                     <li class="flex items-center gap-2 text-brand-500 font-semibold text-sm">
+                     <i class="fa-solid fa-check"></i>
+                     <span>AGILIDADE & AUTOMAÇÃO</span>
+                        </li>
+                         <li class="flex items-center gap-2 text-brand-500 font-semibold text-sm">
+                     <i class="fa-solid fa-check"></i>
+                     <span>OTIMIZAÇÃO DE PROCESSOS E NEGÓCIOS</span>
+                        </li>
+            </div>
+        </div>
+    </section>
+
+    <!--SESSÃO DE PROJETOS-->
+    <section id="projetos" class="py-20 border-b border-gray-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md-items-end justify-between md-12">
+                <div>
+                    <h2 class="text-3xl font-bold text-white tracking-tight sm:text-4xl">Projetos em destaque</h2>
+                    <p class="mt-2 text-gray-400">Aplicações práticas e soluções desenvolvidas.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md: grid-cols-2 gap-8">
+                <!--PROJETO 1-->
+                <div class="bg-darkcard border border-gray-800 rounded-2xl overflow-hidden hover: border-gray-700 transition-all flex flex-col">
+                    <div class="h-48 overflow-hidden border-b border-gray-800 bg-gray-900">
+                        <img src="midias/grafico.png" alt="Dashboard Financeiro e Orçamentário" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow justify-between">
+                        <div>
+                            <div class="flex items-center gap-2 text-xs font-semibold text-brand-500 mb-2">
+                                <span>HTML5</span> • <span>JavaScript</span> • <span>APK</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2">Dashboard Financeiro e Orçamentário</h3>
+                            <p class="text-gray-400 text-sm mb-4">
+                                Aplicação Web/APK interativa para gestão orçamentária, com gráficos em tempo real.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!--PROJETO 2-->
+                    <div class="bg-darkcard border border-gray-800 rounded-2xl overflow-hidden hover: border-gray-700 transition-all flex flex-col">
+                        <div class="h-48 overflow-hidden border-b border-gray-800 bg-gray-900">
+                            <img src="midias/ferramentas.png" alt="Agilidade para WhatsApp" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        </div>
+                    <div class="p-6 flex flex-col flex-grow justify-between">
+                        <div>
+                            <div class="flex items-center gap-2 text-xs font-semibold text-brand-500 mb-2">
+                                <span>Ferramentas</span> • <span>Python</span> • <span>Personalizadas</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2">Agilidade para WhatsApp</h3>
+                            <p class="text-gray-400 text-sm mb-4">
+                                Ferramentas de web utilitária focada em agilizar o envio de mensagens automáticas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!--PERÍCIA JUDICIAL-->
+    <section id="pericia" class="py-20 border-b border-gray-800/50 bg-darkcard/30">
+        <div class="max-w-7xl mx-auto px-4 lg-8">
+            <div class="max-w-3xl">
+                <h2 class="text-3xl font-bold text-white tracking-tight sm:text-4xl mb-6">Perícia Judicial e Assistência Técnica</h2>
+                <p class="text-gray-300 text-base leading-relaxed mb-6">
+                    Atuação técnica em litígios envolvendo tecnologia da informação, assegurando rigor científico na produção de provas digitais, investigação técnica e elaboração de laudos periciais.
+                </p>
+                <ul class="space-y-4 text-gray-400">
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-brand-500 mt-1"></i>
+                        <span>Análise de dados</span>
+                    </li>
+                     <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-brand-500 mt-1"></i>
+                        <span>Investigação de Vulnerabilidades e incidentes de segurança</span>
+                    </li>
+                     <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-brand-500 mt-1"></i>
+                        <span>Elaboração de laudos técnicos para processos judiciais</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--CONTATO SESSÃO-->
+    <section id="contato" class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h2 class="text-xs uppercase tracking-widest text-brand-500 font-bold mb-2">Vamos Coversar?</h2>
+                    <p class="text-3xl sm: text-4xl font-bold text-white">Entre em contato</p>
+                    <p class="text-gray-400 mt-3 text-sm sm:text-base">Aproveite e entre em contato pelos canais abaixo para propostas e parcerias.</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                    <!--WHATSAPP-->
+                    <a href="https://wa.me/5551998041724?text=Ol%C3%A1%20Giovani.%0AGostaria%20de%20contratar%20os%20servi%C3%A7os%2C%20poder%C3%ADamos%20conversar%3F" target="_blank" rel="noopener noreferrer" class="bg-darkcard border border-gray-800 hover:border-emerald-500/50 p-6 rounded-2xl flex flex-col hover:-translate-y-1 group shadow-lg">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-500 flex items-center justify-center text-2xlmb-4 group-hover:bg-emerald-500 group-hover:text-white transition-colors">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-white mb-1">WhatsApp</h4>
+                        <span class="text-xs text-gray-400">Conversa Direta</span>
+                    </a>
+
+                <!--Email-->
+                <a href="mailto:giovanimedeiros.dev@gmail.com" class="bg-darkcard border border-gray-800 hover:border-emerald-500/50 p-6 rounded-2xl flex flex-col hover:-translate-y-1 group shadow-lg">
+                        <div class="w-12 h-12 rounded-xl bg-gray-500/10 text-gray-500 flex items-center justify-center text-2xlmb-4 group-hover:bg-emerald-500 group-hover:text-white transition-colors">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-white mb-1">Email</h4>
+                        <span class="text-xs text-gray-400">Envie uma mensagem</span>
+                    </a>
+
+                <!--LinkeIn-->
+                <a href="https://www.linkedin.com/in/giovani-medeiros-817b33213" targer="_blank" rel="noopener noreferrer" class="bg-darkcard border border-gray-800 hover:border-emerald-500/50 p-6 rounded-2xl flex flex-col hover:-translate-y-1 group shadow-lg">
+                        <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-500 flex items-center justify-center text-2xlmb-4 group-hover:bg-emerald-500 group-hover:text-white transition-colors">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-white mb-1">LinkedIn</h4>
+                        <span class="text-xs text-gray-400">Rede Profissional</span>
+                    </a>
+
+                    <!--GitHub-->
+                    <a href="https://github.com/giovannimedeirosv16-star" targer="_blank" rel="noopener noreferrer" class="bg-darkcard border border-gray-800 hover:border-emerald-500/50 p-6 rounded-2xl flex flex-col hover:-translate-y-1 group shadow-lg">
+                        <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-500 flex items-center justify-center text-2xlmb-4 group-hover:bg-emerald-500 group-hover: text-white transition-colors">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-white mb-1">GitHub</h4>
+                        <span class="text-xs text-gray-400">Repositórios</span>
+                    </a>
+                </div>
+            </div>
+    </section>
+</main>
+
+<!--FOOTER-->
+<footer class="border-t border-gray-800 bg-darkcard py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-500">
+        <p>© Giovani Medeiros. Todos os direitos reservados.</p>
+        <a href="#hero" class="hover:text-gray-300 transition-colors">Voltar ao topo</a>
+    </div>
+</footer>
+<script src="scripts/script.js"></script>
+</body>
+</html>
